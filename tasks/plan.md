@@ -51,7 +51,7 @@ T12 Documentación de personalización ← todo
 - [ ] T6: WhatsApp con el servicio elegido ya en el mensaje
 
 ### Checkpoint 2: flujo de cita completo
-- [ ] `node --test tests/` en verde
+- [ ] `node --test` en verde
 - [ ] Recorrido completo en el navegador: ver servicio, pedir cita por WhatsApp y ver horario y ruta
 - [ ] Funciona con JS desactivado
 - [ ] Revisión con Daniel y push

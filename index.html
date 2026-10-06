@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
@@ -160,6 +161,30 @@
       <section id="horario" class="seccion seccion--oscura" aria-labelledby="titulo-horario">
         <div class="contenedor">
           <h2 id="titulo-horario" class="seccion__titulo">Horario y ubicación</h2>
+          <div class="ubicacion">
+            <div class="ubicacion__datos">
+              <p class="ubicacion__estado" data-estado-horario role="status" hidden></p>
+              <table class="horario">
+                <caption class="solo-lectores">Horario de apertura</caption>
+                <tbody>
+                  <tr><th scope="row">Lunes</th><td>Cerrado</td></tr>
+                  <tr><th scope="row">Martes a viernes</th><td>10:00–14:00 · 16:30–20:30</td></tr>
+                  <tr><th scope="row">Sábado</th><td>09:30–14:00</td></tr>
+                  <tr><th scope="row">Domingo</th><td>Cerrado</td></tr>
+                </tbody>
+              </table>
+              <address class="ubicacion__direccion">
+                Calle de Ejemplo, 12<br>
+                46024 València
+              </address>
+              <a class="boton boton--secundario" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Ejemplo%2012%2C%2046024%20Val%C3%A8ncia">Cómo llegar</a>
+            </div>
+            <picture class="ubicacion__imagen">
+              <source type="image/avif" srcset="assets/img/local-600.avif 600w, assets/img/local-1200.avif 1200w" sizes="(min-width: 48rem) 50vw, 100vw">
+              <source type="image/webp" srcset="assets/img/local-600.webp 600w, assets/img/local-1200.webp 1200w" sizes="(min-width: 48rem) 50vw, 100vw">
+              <img src="assets/img/local-600.jpg" srcset="assets/img/local-600.jpg 600w, assets/img/local-1200.jpg 1200w" sizes="(min-width: 48rem) 50vw, 100vw" width="600" height="400" alt="Interior de la barbería: sillón de barbero clásico frente a una pared de ladrillo visto" loading="lazy" decoding="async">
+            </picture>
+          </div>
         </div>
       </section>
     </main>

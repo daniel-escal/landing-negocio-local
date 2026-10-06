@@ -181,3 +181,65 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Horario y ubicación */
+.ubicacion {
+  display: grid;
+  gap: var(--espacio-8);
+  align-items: start;
+}
+
+.ubicacion__datos {
+  display: grid;
+  gap: var(--espacio-6);
+  justify-items: start;
+}
+
+.ubicacion__estado {
+  padding: var(--espacio-2) var(--espacio-4);
+  border-left: 3px solid var(--color-acento);
+  background: var(--color-oscuro-alto);
+  font-weight: 600;
+}
+
+.horario {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.horario th,
+.horario td {
+  padding-block: var(--espacio-3);
+  border-bottom: var(--borde-fino) solid var(--color-oscuro-alto);
+  text-align: left;
+  vertical-align: top;
+}
+
+.horario th {
+  padding-right: var(--espacio-4);
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+.ubicacion__direccion {
+  font-style: normal;
+}
+
+.ubicacion__imagen {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border: var(--borde-fino) solid var(--color-acento);
+}
+
+.ubicacion__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 48rem) {
+  .ubicacion {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espacio-12);
+  }
+}

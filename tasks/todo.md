@@ -5,13 +5,13 @@ Plan: [`plan.md`](plan.md) · Spec: [`../docs/SPEC.md`](../docs/SPEC.md)
 **Definition of Done de cada tarea:**
 - se cumplen sus criterios de aceptación;
 - `npx --yes html-validate@9 index.html legal/*.html` sin errores;
-- `node --test tests/` en verde (si hay tests);
+- `node --test` en verde (si hay tests);
 - consola limpia en el navegador;
 - un commit atómico.
 
 Comandos:
 - Servidor: `npx --yes serve@14 . -l 5173`
-- Tests: `node --test tests/`
+- Tests: `node --test`
 
 ---
 
@@ -105,7 +105,7 @@ Comandos:
 - [ ] Sin JS, la tabla de horario se ve completa y el indicador no aparece
 
 **Verification:**
-- [ ] `node --test tests/` en verde
+- [ ] `node --test` en verde
 - [ ] DevTools: el indicador coincide con la hora real; consola limpia
 
 **Dependencies:** T1 y T3 (imagen del local)
@@ -122,7 +122,7 @@ Comandos:
 - [ ] El texto del servicio se lee con `textContent`, nunca con `innerHTML`
 
 **Verification:**
-- [ ] `node --test tests/` en verde
+- [ ] `node --test` en verde
 - [ ] DevTools: pulsar "Pedir" en dos servicios distintos genera dos URL `wa.me` distintas y correctas
 
 **Dependencies:** T4
@@ -130,7 +130,7 @@ Comandos:
 **Scope:** S
 
 ### Checkpoint 2: flujo de cita completo
-- [ ] `node --test tests/` en verde
+- [ ] `node --test` en verde
 - [ ] Recorrido completo: ver un servicio, pedir cita por WhatsApp y consultar horario y ruta
 - [ ] Con JS desactivado todo se ve y los enlaces funcionan
 - [ ] Revisión con Daniel y push

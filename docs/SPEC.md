@@ -48,7 +48,7 @@ El contenido de demostración usa un **negocio ficticio**, marcado como tal. No 
 npx --yes serve@14 . -l 5173
 
 # Tests de la lógica JS (runner nativo de Node, sin dependencias)
-node --test tests/
+node --test
 
 # Validar el HTML
 npx --yes html-validate@9 index.html legal/*.html
@@ -115,7 +115,7 @@ export function crearEnlaceWhatsApp(telefono, mensaje) {
 
 | Nivel | Qué | Cómo |
 | --- | --- | --- |
-| Unitario | Funciones de `js/lib/` (enlace de WhatsApp, cálculo de "abierto ahora" con el horario, incluidos el cierre a mediodía y los domingos) | `node --test tests/` |
+| Unitario | Funciones de `js/lib/` (enlace de WhatsApp, cálculo de "abierto ahora" con el horario, incluidos el cierre a mediodía y los domingos) | `node --test` |
 | Validación | HTML válido en todas las páginas | `html-validate` |
 | Navegador | Sin errores ni warnings en consola, peticiones solo al propio dominio, capturas a 375 px, 768 px y 1280 px | MCP de Chrome DevTools |
 | Calidad | Lighthouse móvil: Rendimiento, Accesibilidad, Buenas prácticas y SEO | MCP de Chrome DevTools |
