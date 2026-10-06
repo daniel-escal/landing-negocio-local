@@ -1,0 +1,53 @@
+/*
+ * Marca del cliente. Para adaptar la plantilla a otro negocio,
+ * se cambia este archivo y nada más en los estilos.
+ * Contrastes comprobados (WCAG AA) en los comentarios de cada par.
+ */
+:root {
+  /* Color: superficies */
+  --color-fondo: #f4efe6;          /* papel crema */
+  --color-fondo-alterno: #ebe3d5;  /* crema más oscuro para alternar secciones */
+  --color-oscuro: #15231e;         /* verde botella */
+  --color-oscuro-alto: #1e3029;    /* verde botella elevado */
+
+  /* Color: texto */
+  --color-texto: #1d1a16;          /* sobre --color-fondo: 15,1:1 */
+  --color-texto-suave: #4a443b;    /* sobre --color-fondo: 8,4:1 · sobre --color-fondo-alterno: 7,6:1 */
+  --color-texto-claro: #f4efe6;    /* sobre --color-oscuro: 14,2:1 */
+
+  /* Color: acento latón */
+  --color-acento: #c09a55;         /* sobre --color-oscuro: 6,2:1 (texto, bordes y foco en zonas oscuras) */
+  --color-acento-oscuro: #7a5a22;  /* sobre --color-fondo: 5,5:1 · sobre --color-fondo-alterno: 5,0:1 */
+  --color-borde: #cfc3ae;
+
+  /* Foco: ≥ 3:1 sobre su fondo (WCAG 1.4.11). En zonas oscuras se cambia a --color-acento */
+  --color-foco: var(--color-acento-oscuro);
+
+  /* Tipografía (fuentes del sistema: 0 descargas) */
+  --fuente-titulos: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --fuente-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --texto-base: 1.0625rem;
+  --texto-pequeno: 0.875rem;
+  --texto-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --texto-h2: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  --texto-h1: clamp(2.5rem, 1.8rem + 3.5vw, 4.5rem);
+  --interlineado: 1.6;
+  --interlineado-titulos: 1.15;
+
+  /* Espaciado (escala de 0,25 rem) */
+  --espacio-1: 0.25rem;
+  --espacio-2: 0.5rem;
+  --espacio-3: 0.75rem;
+  --espacio-4: 1rem;
+  --espacio-6: 1.5rem;
+  --espacio-8: 2rem;
+  --espacio-12: 3rem;
+  --espacio-16: 4rem;
+  --espacio-24: 6rem;
+
+  /* Forma */
+  --radio: 2px;
+  --borde-fino: 1px;
+  --ancho-max: 72rem;
+  --ancho-texto: 38rem;
+}
