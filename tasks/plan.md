@@ -66,13 +66,13 @@ T12 Documentación de personalización ← todo
 - [x] Revisión con Daniel y push
 
 ### Fase 4: Verificación y documentación
-- [ ] T10: Auditoría en navegador (consola, red, responsive, teclado, sin JS)
-- [ ] T11: Lighthouse móvil y ajustes de rendimiento hasta cumplir los objetivos
-- [ ] T12: `docs/PERSONALIZAR.md`, créditos de imágenes y README final
+- [x] T10: Auditoría en navegador (consola, red, responsive, teclado, sin JS)
+- [x] T11: Lighthouse móvil y ajustes de rendimiento hasta cumplir los objetivos
+- [x] T12: `docs/PERSONALIZAR.md`, créditos de imágenes y README final
 
 ### Checkpoint final
-- [ ] Los 11 criterios de éxito de la spec, comprobados uno a uno con evidencias
-- [ ] Definition of Done (`references/definition-of-done.md`) cumplida
+- [x] Los 11 criterios de éxito de la spec, comprobados uno a uno con evidencias (docs/VERIFICACION.md)
+- [x] Definition of Done (`references/definition-of-done.md`) cumplida
 - [ ] Aprobación de Daniel. Decidir si se publica en GitHub Pages (pregunta abierta de la spec)
 
 ## Riesgos y mitigaciones

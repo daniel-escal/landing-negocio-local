@@ -203,12 +203,12 @@ Comandos:
 **Description:** Pasada completa con el MCP de Chrome DevTools: consola, red (0 peticiones a terceros), capturas a 320, 375, 768, 1280 y 1920 px, recorrido con teclado y prueba con JS desactivado. Corregir lo que salga.
 
 **Acceptance criteria:**
-- [ ] 0 errores y 0 warnings en consola; 0 peticiones a otros dominios
-- [ ] Sin scroll horizontal en ningún ancho
-- [ ] Criterios de éxito 4, 5, 6 y 7 de la spec comprobados con evidencia (capturas o salida)
+- [x] 0 errores y 0 warnings en consola; 0 peticiones a otros dominios
+- [x] Sin scroll horizontal en ningún ancho
+- [x] Criterios de éxito 4, 5, 6 y 7 de la spec comprobados con evidencia (capturas o salida)
 
 **Verification:**
-- [ ] Informe breve con capturas en el mensaje del commit o en el PR
+- [x] Informe breve con capturas en el mensaje del commit o en el PR
 
 **Dependencies:** T1–T9
 **Files:** los que necesiten arreglo
@@ -219,11 +219,11 @@ Comandos:
 **Description:** Lighthouse móvil con el MCP de DevTools. Medir, arreglar el cuello de botella real, volver a medir y quedarse el cambio o revertirlo, hasta cumplir los objetivos de la spec.
 
 **Acceptance criteria:**
-- [ ] Rendimiento ≥ 95, y 100 en Accesibilidad, Buenas prácticas y SEO
-- [ ] LCP ≤ 2,5 s, CLS ≤ 0,1, TBT ≤ 200 ms y peso inicial ≤ 500 KB
+- [x] Rendimiento ≥ 95, y 100 en Accesibilidad, Buenas prácticas y SEO
+- [x] LCP ≤ 2,5 s, CLS ≤ 0,1, TBT ≤ 200 ms y peso inicial ≤ 500 KB
 
 **Verification:**
-- [ ] Puntuaciones antes y después anotadas en el commit
+- [x] Puntuaciones antes y después anotadas en el commit
 
 **Dependencies:** T10
 **Files:** los que necesiten arreglo
@@ -234,17 +234,17 @@ Comandos:
 **Description:** `docs/PERSONALIZAR.md` con el paso a paso para adaptar la plantilla a un cliente nuevo en menos de una hora (tokens, config, contenido, imágenes y mantener sincronizados horario y JSON-LD). Actualizar el README con capturas y estado.
 
 **Acceptance criteria:**
-- [ ] Siguiendo solo la guía, un cambio de marca toca únicamente los archivos que dice la spec
-- [ ] El README explica qué es, cómo arrancarlo y cómo personalizarlo
+- [x] Siguiendo solo la guía, un cambio de marca toca únicamente los archivos que dice la spec
+- [x] El README explica qué es, cómo arrancarlo y cómo personalizarlo
 
 **Verification:**
-- [ ] Prueba: cambiar los tokens a otra paleta siguiendo la guía; la página sigue siendo válida y con contraste AA
+- [x] Prueba: cambiar los tokens a otra paleta siguiendo la guía; la página sigue siendo válida y con contraste AA
 
 **Dependencies:** T1–T11
 **Files:** `docs/PERSONALIZAR.md`, `README.md`
 **Scope:** S
 
 ### Checkpoint final
-- [ ] Los 11 criterios de éxito de la spec, con evidencia
-- [ ] Definition of Done cumplida
+- [x] Los 11 criterios de éxito de la spec, con evidencia
+- [x] Definition of Done cumplida
 - [ ] Aprobación de Daniel y decisión sobre GitHub Pages

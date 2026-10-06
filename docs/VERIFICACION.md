@@ -89,3 +89,25 @@ En `tests/rendimiento.test.js`:
   - Lighthouse móvil siguió dando Accesibilidad 100, con 0 auditorías fallidas.
   - Después se deshizo el cambio.
 - Limitación conocida: la tabla de horario del HTML no la comprueban los tests (el JSON-LD sí). La guía avisa de que hay que revisarla a mano.
+
+## Resumen: los 11 criterios de éxito de la spec
+
+| # | Criterio | Estado | Evidencia |
+| --- | --- | --- | --- |
+| 1 | Lighthouse móvil: Rendimiento ≥ 95; Accesibilidad, Buenas prácticas y SEO = 100 | ✅ | 100 / 100 / 100 / 100 en 3 ejecuciones (T11) |
+| 2 | LCP ≤ 2,5 s, CLS ≤ 0,1, TBT ≤ 200 ms | ✅ | 1,28 s / 0 / 0 ms (T11). El CLS era 0,110 y se corrigió |
+| 3 | Carga inicial ≤ 500 KB y 0 peticiones a terceros | ✅ | 104 KB; 0 terceros incluso con toda la página cargada (T10, T11) y test de regresión |
+| 4 | WCAG 2.1 AA: teclado, foco visible, contraste | ✅ | 22 elementos enfocables con contorno (peor 5,53:1), menú probado con teclado, Lighthouse Accesibilidad 100 |
+| 5 | Sin scroll horizontal de 320 a 1920 px | ✅ | 0 desbordes en 320, 375, 768, 1280 y 1920 (T10) |
+| 6 | Sin JS: todo el contenido visible y los contactos funcionan | ✅ | Chrome con JS desactivado de verdad (T10) |
+| 7 | WhatsApp con mensaje, `tel:` y "Cómo llegar" | ✅ | Comprobado en el navegador (7 mensajes por servicio) y con tests |
+| 8 | JSON-LD `HairSalon` válido | ✅ con matiz | Se interpreta sin errores en el navegador y los tests comprueban horario y catálogo. **No se ha pasado por el validador de Schema.org** (se hace al publicar) |
+| 9 | Personalizable tocando solo tokens, config, HTML e imágenes | ✅ | Cambio de paleta solo en `tokens.css` con a11y 100 (T12) |
+| 10 | Estética propia, sin "estética de IA" | ✅ | Aprobada por Daniel en el checkpoint 1. Sin degradados ni sombras; carta con puntos guía; galería con jerarquía; reseñas como citas |
+| 11 | `node --test` y `html-validate` sin errores | ✅ | 26 tests; HTML válido en las 3 páginas |
+
+## Pendiente para cuando se publique
+
+- Pasar el JSON-LD por el validador de Schema.org y la Prueba de resultados enriquecidos de Google
+- Descomentar `canonical`, `og:url` y `og:image` con el dominio real
+- Configurar la caché larga de `assets/` en el hosting
