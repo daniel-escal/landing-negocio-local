@@ -79,3 +79,13 @@ En `tests/rendimiento.test.js`:
 - todas las imágenes declaran `width` y `height`;
 - solo la imagen del hero lleva `fetchpriority="high"` y el resto, `loading="lazy"`;
 - no se carga ningún recurso de otro dominio.
+
+## T12: personalización (criterio 9)
+
+- El comando de `docs/PERSONALIZAR.md` para generar el enlace de WhatsApp desde `config.js` devuelve exactamente el enlace que aparece 10 veces en `index.html`.
+- Prueba de cambio de marca siguiendo la guía: se aplicó una paleta azul marino y burdeos tocando **solo `css/tokens.css`**.
+  - Los 9 pares de contraste de la guía dan entre 6,66:1 y 15,53:1, todos por encima de 4,5:1.
+  - Toda la página adoptó la nueva marca.
+  - Lighthouse móvil siguió dando Accesibilidad 100, con 0 auditorías fallidas.
+  - Después se deshizo el cambio.
+- Limitación conocida: la tabla de horario del HTML no la comprueban los tests (el JSON-LD sí). La guía avisa de que hay que revisarla a mano.
