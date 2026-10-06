@@ -17,6 +17,8 @@
     <meta property="og:image" content="https://DOMINIO/assets/img/og.jpg">
     -->
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Marca la página con "js" antes de pintar: el menú móvil nace plegado y no provoca saltos (CLS). -->
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">

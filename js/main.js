@@ -35,7 +35,6 @@ function activarMenu() {
     boton.setAttribute('aria-expanded', String(abierto));
   };
 
-  cabecera.classList.add('cabecera--js');
   boton.addEventListener('click', () => abrir(boton.getAttribute('aria-expanded') !== 'true'));
 
   cabecera.addEventListener('keydown', (evento) => {

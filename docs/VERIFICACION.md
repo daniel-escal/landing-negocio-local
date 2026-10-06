@@ -47,3 +47,35 @@ Chrome headless con `page.setJavaScriptEnabled(false)`. Se comprueba que el scri
 
 - `html-validate` no da errores en `index.html` ni en `legal/*.html`.
 - `node --test`: 22 tests en verde. Se comprobó que cada grupo de tests detecta fallos introduciendo un error a propósito: el cierre de horario, la codificación de WhatsApp y el horario del JSON-LD.
+
+## T11: Lighthouse móvil y rendimiento (criterios 1, 2 y 3)
+
+Lighthouse 12 en modo móvil (emulación de Moto G Power con limitación simulada), 3 ejecuciones por medición. La variación entre ejecuciones es de ±2 ms en el LCP y de 0 en el resto de métricas.
+
+| Métrica | Objetivo | Línea base | Tras el arreglo |
+| --- | --- | --- | --- |
+| Rendimiento | ≥ 95 | 97 | **100** |
+| Accesibilidad | 100 | 100 | 100 |
+| Buenas prácticas | 100 | 100 | 100 |
+| SEO | 100 | 100 | 100 |
+| LCP | ≤ 2,5 s | 1,28 s | 1,28 s |
+| CLS | ≤ 0,1 | **0,110** ❌ | **0,000** |
+| TBT | ≤ 200 ms | 0 ms | 0 ms |
+| Peso inicial | ≤ 500 KB | 104 KB | 104 KB |
+
+### Registro de optimizaciones
+
+| Idea | Antes → después | Veredicto | Por qué |
+| --- | --- | --- | --- |
+| Poner la clase `js` en `<html>` con un script inline en el `<head>` para que el menú móvil nazca plegado | CLS 0,110 → 0,000 · Rendimiento 97 → 100 | **aplicada** | Lighthouse señalaba `<main>` como elemento desplazado. Al medirla, la cabecera ocupaba 166 px antes de cargar el JS y 69 px después: el menú se plegaba a mitad de carga. Sin JS sigue en 166 px (desplegada). |
+| Unir los 3 CSS o incrustar el CSS crítico (Lighthouse estima 150 ms) | no probada | descartada | Con 100 en rendimiento no hay problema que resolver, y añadiría un paso de build a un proyecto que no tiene. |
+| Ajustar `sizes`/anchos de las imágenes de la galería (Lighthouse estima 22 KB) | no probada | descartada | El peso total es 104 KB frente al límite de 500 KB. |
+| Caché de larga duración | no aplicable en local | pendiente de hosting | Es configuración del servidor (`Cache-Control`), no del código. Se configura al publicar. |
+
+### Protección contra regresiones
+
+En `tests/rendimiento.test.js`:
+- el script de la clase `js` debe ir en el `<head>` antes de las hojas de estilo; se comprobó que el test falla si se quita;
+- todas las imágenes declaran `width` y `height`;
+- solo la imagen del hero lleva `fetchpriority="high"` y el resto, `loading="lazy"`;
+- no se carga ningún recurso de otro dominio.

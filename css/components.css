@@ -409,22 +409,22 @@
 }
 
 @media (max-width: 47.99rem) {
-  /* Sin JS, la lista se ve entera bajo la marca. Con JS se pliega tras el botón. */
-  .cabecera--js .cabecera__boton-menu {
+  /* Sin JS, la lista se ve entera bajo la marca. Con JS (clase "js" en <html>, puesta en el <head>) se pliega tras el botón. */
+  .js .cabecera .cabecera__boton-menu {
     display: inline-flex;
     align-items: center;
   }
 
-  .cabecera--js .cabecera__nav {
+  .js .cabecera .cabecera__nav {
     display: none;
     flex-basis: 100%;
   }
 
-  .cabecera--js.cabecera--abierta .cabecera__nav {
+  .js .cabecera--abierta .cabecera__nav {
     display: block;
   }
 
-  .cabecera--js .cabecera__lista {
+  .js .cabecera .cabecera__lista {
     flex-direction: column;
     align-items: stretch;
     padding-bottom: var(--espacio-4);
