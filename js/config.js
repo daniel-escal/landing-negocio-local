@@ -1,10 +1,12 @@
 /*
  * Datos del negocio que usa JavaScript.
- * El horario también aparece en la tabla de index.html y en el JSON-LD:
- * si se cambia aquí, hay que cambiarlo allí (ver docs/PERSONALIZAR.md).
+ * El teléfono y el horario también aparecen en index.html (enlaces y tabla) y en el JSON-LD:
+ * si se cambian aquí, hay que cambiarlos allí (ver docs/PERSONALIZAR.md).
+ * `node --test` comprueba que los enlaces de WhatsApp del HTML coinciden con estos datos.
  */
 export const negocio = {
   nombre: 'Brocha & Latón',
+  telefono: '+34 600 000 000', // con prefijo internacional
   zonaHoraria: 'Europe/Madrid',
   // Claves = día de la semana (0 = domingo). Cada tramo: ['apertura', 'cierre'].
   horario: {
