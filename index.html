@@ -38,7 +38,11 @@
               <a class="boton boton--secundario" href="tel:+34600000000">Llamar&nbsp;al&nbsp;600&nbsp;000&nbsp;000</a>
             </div>
           </div>
-          <div class="hero__imagen" aria-hidden="true"></div>
+          <picture class="hero__imagen">
+            <source type="image/avif" srcset="assets/img/hero-480.avif 480w, assets/img/hero-800.avif 800w, assets/img/hero-1200.avif 1200w" sizes="(min-width: 48rem) 40vw, 100vw">
+            <source type="image/webp" srcset="assets/img/hero-480.webp 480w, assets/img/hero-800.webp 800w, assets/img/hero-1200.webp 1200w" sizes="(min-width: 48rem) 40vw, 100vw">
+            <img src="assets/img/hero-800.jpg" srcset="assets/img/hero-480.jpg 480w, assets/img/hero-800.jpg 800w, assets/img/hero-1200.jpg 1200w" sizes="(min-width: 48rem) 40vw, 100vw" width="800" height="1000" alt="Barbero recortando el pelo de un cliente con peine y tijera" fetchpriority="high" decoding="async">
+          </picture>
         </div>
       </section>
 
