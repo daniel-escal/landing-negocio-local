@@ -1,0 +1,16 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Dependencias y builds (por si se añaden herramientas)
+node_modules/
+dist/
+
+# Secretos
+.env
+.env.*
