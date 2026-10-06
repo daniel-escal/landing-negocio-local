@@ -30,7 +30,9 @@ test('solo la imagen del hero es prioritaria; el resto se carga en diferido (LCP
 });
 
 test('no se carga ningún recurso de otro dominio (sin terceros ni cookies)', () => {
+  // rel="canonical" no se descarga: solo indica a los buscadores la URL oficial.
   const recursos = [...html.matchAll(/<(?:link|script|img|source)\b[^>]*\b(?:href|src|srcset)="([^"]+)"/g)]
+    .filter(([etiqueta]) => !etiqueta.includes('rel="canonical"'))
     .map(([, url]) => url)
     .filter((url) => !url.startsWith('#'));
   const externos = recursos.filter((url) => /^(https?:)?\/\//.test(url) && !url.startsWith('https://schema.org'));
