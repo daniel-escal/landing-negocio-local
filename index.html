@@ -13,15 +13,17 @@
   <body>
     <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
 
-    <header class="cabecera">
-      <div class="contenedor">
+    <header class="cabecera seccion--oscura" data-cabecera>
+      <div class="contenedor cabecera__barra">
         <a class="cabecera__marca" href="#inicio">Brocha &amp; Latón</a>
-        <nav aria-label="Principal">
-          <ul>
+        <button class="cabecera__boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal" data-boton-menu>Menú</button>
+        <nav class="cabecera__nav" id="menu-principal" aria-label="Principal">
+          <ul class="cabecera__lista">
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#galeria">Trabajos</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#horario">Horario</a></li>
+            <li><a class="boton boton--principal cabecera__cita" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20cita%20en%20Brocha%20%26%20Lat%C3%B3n.">Pedir cita</a></li>
           </ul>
         </nav>
       </div>
@@ -258,9 +260,32 @@
       </section>
     </main>
 
-    <footer class="pie">
-      <div class="contenedor">
+    <footer class="pie seccion--oscura">
+      <div class="contenedor pie__rejilla">
+        <div>
+          <p class="pie__marca">Brocha &amp; Latón</p>
+          <p>Barbería clásica en El Grao, Valencia.</p>
+        </div>
+        <div>
+          <h2 class="pie__titulo">Contacto</h2>
+          <ul class="pie__lista">
+          <li><a href="tel:+34600000000">Teléfono:&nbsp;600&nbsp;000&nbsp;000</a></li>
+          <li><a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20cita%20en%20Brocha%20%26%20Lat%C3%B3n.">WhatsApp</a></li>
+          <!-- Personalizar: <li><a href="https://www.instagram.com/USUARIO/">Instagram</a></li> -->
+          <li>Calle de Ejemplo, 12 · 46024 València</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="pie__titulo">Legal</h2>
+          <ul class="pie__lista">
+          <li><a href="legal/aviso-legal.html">Aviso legal</a></li>
+          <li><a href="legal/privacidad.html">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contenedor pie__final">
         <p>Brocha &amp; Latón es un negocio ficticio de demostración.</p>
+        <p>Web por <a href="https://daniel-escal.es">Daniel Escalante</a></p>
       </div>
     </footer>
   </body>
