@@ -22,14 +22,14 @@ Comandos:
 **Description:** Crear `index.html` con la estructura semántica completa: `header`, `nav`, `main` con una `section` vacía y con su id por cada parte de la spec, y `footer`. Una sola `h1`, `lang="es"` y meta viewport. Definir la marca de barbería clásica en `tokens.css`, más el reset y la tipografía base.
 
 **Acceptance criteria:**
-- [ ] Todas las secciones de la spec existen como `section` con `id` y `aria-labelledby`
-- [ ] Ningún color, fuente ni radio está escrito fuera de `tokens.css`
-- [ ] El contraste del texto base sobre el fondo cumple AA (≥ 4,5:1)
+- [x] Todas las secciones de la spec existen como `section` con `id` y `aria-labelledby`
+- [x] Ningún color, fuente ni radio está escrito fuera de `tokens.css`
+- [x] El contraste del texto base sobre el fondo cumple AA (≥ 4,5:1)
 
 **Verification:**
-- [ ] `html-validate` sin errores
-- [ ] Página servida en `localhost:5173` sin errores de consola
-- [ ] Manual: la estructura de encabezados es lógica (h1 → h2 por sección)
+- [x] `html-validate` sin errores
+- [x] Página servida en `localhost:5173` sin errores de consola
+- [x] Manual: la estructura de encabezados es lógica (h1 → h2 por sección)
 
 **Dependencies:** Ninguna
 **Files:** `index.html`, `css/tokens.css`, `css/base.css`
@@ -40,13 +40,13 @@ Comandos:
 **Description:** El hero con el nombre del negocio, su propuesta de valor y dos llamadas a la acción: "Pedir cita por WhatsApp" (`https://wa.me/...` con el mensaje ya codificado en el HTML) y "Llamar" (`tel:`). Funciona sin JS. Usa una imagen provisional de color sólido hasta T3.
 
 **Acceptance criteria:**
-- [ ] A 375 px el nombre y los dos botones se ven sin hacer scroll
-- [ ] Los botones son enlaces reales (`<a>`) con texto descriptivo, área táctil ≥ 44×44 px y foco visible
-- [ ] El enlace de WhatsApp abre `wa.me` con el número y el mensaje correctos
+- [x] A 375 px el nombre y los dos botones se ven sin hacer scroll
+- [x] Los botones son enlaces reales (`<a>`) con texto descriptivo, área táctil ≥ 44×44 px y foco visible
+- [x] El enlace de WhatsApp abre `wa.me` con el número y el mensaje correctos
 
 **Verification:**
-- [ ] `html-validate` sin errores
-- [ ] Manual o DevTools: capturas a 375 y 1280 px; navegación con Tab hasta los dos botones
+- [x] `html-validate` sin errores
+- [x] Manual o DevTools: capturas a 375 y 1280 px; navegación con Tab hasta los dos botones
 
 **Dependencies:** T1
 **Files:** `index.html`, `css/components.css`
@@ -57,22 +57,22 @@ Comandos:
 **Description:** Elegir las fotos de Unsplash (hero, galería y ubicación), descargarlas recortadas y convertirlas a AVIF, WebP y JPEG en 2 o 3 anchos. Aplicar la del hero con `<picture>`, `srcset`, `sizes`, `width`/`height` y `fetchpriority="high"`. Anotar autor y licencia.
 
 **Acceptance criteria:**
-- [ ] La imagen del hero pesa ≤ 120 KB en AVIF al ancho móvil, y ninguna imagen de la galería pasa de 80 KB
-- [ ] Todas tienen `alt` descriptivo y `width`/`height`
-- [ ] `assets/img/CREDITOS.md` recoge autor, enlace y licencia de cada foto
+- [x] La imagen del hero pesa ≤ 120 KB en AVIF al ancho móvil, y ninguna imagen de la galería pasa de 80 KB
+- [x] Todas tienen `alt` descriptivo y `width`/`height`
+- [x] `assets/img/CREDITOS.md` recoge autor, enlace y licencia de cada foto
 
 **Verification:**
-- [ ] DevTools (pestaña Red): el hero sirve AVIF y no hay peticiones a `images.unsplash.com` en tiempo de ejecución
-- [ ] Manual: no hay saltos de maquetación al cargar el hero
+- [x] DevTools (pestaña Red): el hero sirve AVIF y no hay peticiones a `images.unsplash.com` en tiempo de ejecución
+- [x] Manual: no hay saltos de maquetación al cargar el hero
 
 **Dependencies:** T2 (herramienta: `npx sharp-cli`, aprobada)
 **Files:** `assets/img/*`, `assets/img/CREDITOS.md`, `index.html`, `css/components.css`
 **Scope:** M
 
 ### Checkpoint 1: base
-- [ ] Validación limpia, consola limpia y hero correcto a 375, 768 y 1280 px
+- [x] Validación limpia, consola limpia y hero correcto a 375, 768 y 1280 px
 - [ ] Revisión de la estética de marca con Daniel
-- [ ] Push (si se aprueba)
+- [x] Push (si se aprueba)
 
 ---
 

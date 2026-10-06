@@ -37,12 +37,12 @@ T12 Documentación de personalización ← todo
 ## Lista de tareas (detalle en `todo.md`)
 
 ### Fase 1: Base y riesgos
-- [ ] T1: Esqueleto semántico, tokens de marca y estilos base
-- [ ] T2: Hero con botones de llamar y WhatsApp
-- [ ] T3: Flujo de imágenes de Unsplash optimizadas (aplicado al hero)
+- [x] T1: Esqueleto semántico, tokens de marca y estilos base
+- [x] T2: Hero con botones de llamar y WhatsApp
+- [x] T3: Flujo de imágenes de Unsplash optimizadas (aplicado al hero)
 
 ### Checkpoint 1: base
-- [ ] `html-validate` limpio, página servida en local, consola limpia y hero correcto a 375 y 1280 px
+- [x] `html-validate` limpio, página servida en local, consola limpia y hero correcto a 375, 768 y 1280 px
 - [ ] Revisión con Daniel (estética de la marca) y push si lo aprueba
 
 ### Fase 2: Contenido principal
