@@ -143,18 +143,87 @@
       <section id="galeria" class="seccion seccion--alterna" aria-labelledby="titulo-galeria">
         <div class="contenedor">
           <h2 id="titulo-galeria" class="seccion__titulo">Nuestros trabajos</h2>
+          <ul class="galeria">
+              <li class="galeria__item galeria__item--ancha">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-sillon-600.avif 600w, assets/img/galeria-sillon-1200.avif 1200w" sizes="(min-width: 48rem) 50vw, 100vw">
+                  <source type="image/webp" srcset="assets/img/galeria-sillon-600.webp 600w, assets/img/galeria-sillon-1200.webp 1200w" sizes="(min-width: 48rem) 50vw, 100vw">
+                  <img src="assets/img/galeria-sillon-600.jpg" srcset="assets/img/galeria-sillon-600.jpg 600w, assets/img/galeria-sillon-1200.jpg 1200w" sizes="(min-width: 48rem) 50vw, 100vw" width="600" height="400" alt="Sillón de barbero clásico tapizado en rojo, con espejos y cuadros antiguos al fondo" loading="lazy" decoding="async">
+                </picture>
+              </li>
+              <li class="galeria__item galeria__item--alta">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-barba-400.avif 400w, assets/img/galeria-barba-800.avif 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <source type="image/webp" srcset="assets/img/galeria-barba-400.webp 400w, assets/img/galeria-barba-800.webp 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <img src="assets/img/galeria-barba-400.jpg" srcset="assets/img/galeria-barba-400.jpg 400w, assets/img/galeria-barba-800.jpg 800w" sizes="(min-width: 48rem) 25vw, 50vw" width="400" height="500" alt="Arreglo de barba con tijera, en blanco y negro" loading="lazy" decoding="async">
+                </picture>
+              </li>
+              <li class="galeria__item ">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-entresacar-400.avif 400w, assets/img/galeria-entresacar-800.avif 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <source type="image/webp" srcset="assets/img/galeria-entresacar-400.webp 400w, assets/img/galeria-entresacar-800.webp 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <img src="assets/img/galeria-entresacar-400.jpg" srcset="assets/img/galeria-entresacar-400.jpg 400w, assets/img/galeria-entresacar-800.jpg 800w" sizes="(min-width: 48rem) 25vw, 50vw" width="400" height="500" alt="Barbero entresacando el pelo con peine y tijera de entresacar" loading="lazy" decoding="async">
+                </picture>
+              </li>
+              <li class="galeria__item ">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-degradado-400.avif 400w, assets/img/galeria-degradado-800.avif 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <source type="image/webp" srcset="assets/img/galeria-degradado-400.webp 400w, assets/img/galeria-degradado-800.webp 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <img src="assets/img/galeria-degradado-400.jpg" srcset="assets/img/galeria-degradado-400.jpg 400w, assets/img/galeria-degradado-800.jpg 800w" sizes="(min-width: 48rem) 25vw, 50vw" width="400" height="500" alt="Degradado a máquina en la nuca de un cliente" loading="lazy" decoding="async">
+                </picture>
+              </li>
+              <li class="galeria__item ">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-navaja-400.avif 400w, assets/img/galeria-navaja-800.avif 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <source type="image/webp" srcset="assets/img/galeria-navaja-400.webp 400w, assets/img/galeria-navaja-800.webp 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <img src="assets/img/galeria-navaja-400.jpg" srcset="assets/img/galeria-navaja-400.jpg 400w, assets/img/galeria-navaja-800.jpg 800w" sizes="(min-width: 48rem) 25vw, 50vw" width="400" height="500" alt="Perfilado de la línea del pelo con navaja" loading="lazy" decoding="async">
+                </picture>
+              </li>
+              <li class="galeria__item ">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/galeria-afeitado-400.avif 400w, assets/img/galeria-afeitado-800.avif 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <source type="image/webp" srcset="assets/img/galeria-afeitado-400.webp 400w, assets/img/galeria-afeitado-800.webp 800w" sizes="(min-width: 48rem) 25vw, 50vw">
+                  <img src="assets/img/galeria-afeitado-400.jpg" srcset="assets/img/galeria-afeitado-400.jpg 400w, assets/img/galeria-afeitado-800.jpg 800w" sizes="(min-width: 48rem) 25vw, 50vw" width="400" height="500" alt="Cliente recostado en el sillón durante un arreglo de barba" loading="lazy" decoding="async">
+                </picture>
+              </li>
+          </ul>
         </div>
       </section>
 
       <section id="nosotros" class="seccion" aria-labelledby="titulo-nosotros">
         <div class="contenedor">
           <h2 id="titulo-nosotros" class="seccion__titulo">Sobre nosotros</h2>
+          <div class="nosotros">
+            <p class="nosotros__entrada">Una barbería de barrio en El Grao, con dos sillones, buena conversación y ninguna prisa.</p>
+            <div class="nosotros__texto">
+              <p>Trabajamos a tijera y a navaja como se ha hecho siempre, y a máquina cuando el corte lo pide. Cada servicio empieza escuchando qué quieres y termina con un repaso en el espejo.</p>
+              <p>Atendemos con cita para que no tengas que esperar. Si pasas sin avisar y hay un hueco, también te sentamos.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="resenas" class="seccion seccion--alterna" aria-labelledby="titulo-resenas">
         <div class="contenedor">
           <h2 id="titulo-resenas" class="seccion__titulo">Lo que dicen nuestros clientes</h2>
+          <p class="resenas__aviso">Reseñas de ejemplo: en la web de un cliente real, aquí van sus reseñas reales.</p>
+          <ul class="resenas">
+            <li class="resena">
+              <p class="resena__nota"><span aria-hidden="true">★★★★★</span><span class="solo-lectores">5 de 5 estrellas</span></p>
+              <blockquote class="resena__texto"><p>Me corto aquí desde que abrieron. Te escuchan, no te meten prisa y el degradado dura impecable dos semanas.</p></blockquote>
+              <p class="resena__autor">Javier M.</p>
+            </li>
+            <li class="resena">
+              <p class="resena__nota"><span aria-hidden="true">★★★★★</span><span class="solo-lectores">5 de 5 estrellas</span></p>
+              <blockquote class="resena__texto"><p>El afeitado a navaja con toalla caliente es otra cosa. Salí como nuevo y con la piel perfecta.</p></blockquote>
+              <p class="resena__autor">Andrés R.</p>
+            </li>
+            <li class="resena">
+              <p class="resena__nota"><span aria-hidden="true">★★★★★</span><span class="solo-lectores">5 de 5 estrellas</span></p>
+              <blockquote class="resena__texto"><p>Llevé a mi hijo de 6 años y tuvieron una paciencia enorme. Ahora quiere volver él solo.</p></blockquote>
+              <p class="resena__autor">Lucía P.</p>
+            </li>
+          </ul>
         </div>
       </section>
 

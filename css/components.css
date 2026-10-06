@@ -3,7 +3,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem; /* área táctil ≥ 44 px */
+  min-height: var(--area-tactil);
   padding: var(--espacio-3) var(--espacio-6);
   border: var(--borde-fino) solid transparent;
   border-radius: var(--radio);
@@ -162,7 +162,7 @@
 .carta__pedir {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
+  min-height: var(--area-tactil);
   padding-inline: var(--espacio-4);
   border: var(--borde-fino) solid var(--color-acento-oscuro);
   border-radius: var(--radio);
@@ -241,5 +241,115 @@
   .ubicacion {
     grid-template-columns: 1fr 1fr;
     gap: var(--espacio-12);
+  }
+}
+
+/* Galería: una foto alta y una ancha marcan la jerarquía; el resto rellena alrededor */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 11rem;
+  grid-auto-flow: dense;
+  gap: var(--espacio-2);
+  padding: 0;
+  list-style: none;
+}
+
+.galeria__item {
+  overflow: hidden;
+  background: var(--color-borde); /* se ve mientras carga */
+}
+
+.galeria__item picture,
+.galeria__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.galeria__item img {
+  object-fit: cover;
+}
+
+.galeria__item--ancha {
+  grid-column: span 2;
+}
+
+.galeria__item--alta {
+  grid-row: span 2;
+}
+
+@media (min-width: 48rem) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 15rem;
+    gap: var(--espacio-3);
+  }
+}
+
+/* Sobre nosotros */
+.nosotros {
+  display: grid;
+  gap: var(--espacio-6);
+}
+
+.nosotros__entrada {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h3);
+  line-height: var(--interlineado-titulos);
+}
+
+.nosotros__texto {
+  display: grid;
+  gap: var(--espacio-4);
+  color: var(--color-texto-suave);
+}
+
+@media (min-width: 48rem) {
+  .nosotros {
+    grid-template-columns: 2fr 3fr;
+    gap: var(--espacio-12);
+  }
+}
+
+/* Reseñas: citas separadas por filetes, no tarjetas */
+.resenas__aviso {
+  margin-top: calc(-1 * var(--espacio-6));
+  margin-bottom: var(--espacio-8);
+  color: var(--color-texto-suave);
+  font-size: var(--texto-pequeno);
+}
+
+.resenas {
+  display: grid;
+  gap: var(--espacio-8);
+  padding: 0;
+  list-style: none;
+}
+
+.resena {
+  padding-left: var(--espacio-6);
+  border-left: 2px solid var(--color-acento-oscuro);
+}
+
+.resena__nota {
+  color: var(--color-acento-oscuro);
+  letter-spacing: 0.15em;
+}
+
+.resena__texto {
+  margin-block: var(--espacio-3);
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-destacado);
+}
+
+.resena__autor {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-pequeno);
+  font-weight: 600;
+}
+
+@media (min-width: 48rem) {
+  .resenas {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

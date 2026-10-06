@@ -27,7 +27,7 @@ Construir una plantilla de landing page de una sola página para barberías y pe
 3. **Servicios:** lista con nombre, descripción corta, precio y duración.
 4. **Galería:** de 6 a 8 fotos de trabajos.
 5. **Sobre nosotros:** texto breve (la subsección de equipo queda fuera de la v1).
-6. **Reseñas:** 3 testimonios (con la nota "reseñas de Google", sin incrustar widgets).
+6. **Reseñas:** 3 testimonios rotulados como "Reseñas de ejemplo" mientras sean inventados (presentarlos como "de Google" haría pasar por auténticas unas reseñas falsas). En la web de un cliente se sustituyen por sus reseñas reales, sin incrustar widgets.
 7. **Horario y ubicación:** tabla de horario, dirección, enlace "Cómo llegar" a Google Maps y, en vez de un mapa incrustado, una imagen estática o una ilustración.
 8. **Contacto / pie:** teléfono, WhatsApp, Instagram, enlaces legales (aviso legal y privacidad) y el crédito "Web por Daniel Escalante".
 
