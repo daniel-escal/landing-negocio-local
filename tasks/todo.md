@@ -144,13 +144,13 @@ Comandos:
 **Description:** Galería de 6 a 8 fotos con `loading="lazy"`, un texto breve de "Sobre nosotros" y 3 reseñas con autor, la nota "Reseñas de Google" y estrellas accesibles (texto "5 de 5" para lectores de pantalla).
 
 **Acceptance criteria:**
-- [ ] Las imágenes de la galería se cargan en diferido y no provocan saltos de maquetación
-- [ ] Las estrellas tienen una alternativa textual accesible
-- [ ] La galería no es una rejilla uniforme genérica: tiene una composición con jerarquía
+- [x] Las imágenes de la galería se cargan en diferido y no provocan saltos de maquetación
+- [x] Las estrellas tienen una alternativa textual accesible
+- [x] La galería no es una rejilla uniforme genérica: tiene una composición con jerarquía
 
 **Verification:**
-- [ ] `html-validate` sin errores
-- [ ] DevTools: las imágenes de la galería no se piden en la carga inicial (lazy)
+- [x] `html-validate` sin errores
+- [x] DevTools: las imágenes de la galería no se piden en la carga inicial (lazy)
 
 **Dependencies:** T3
 **Files:** `index.html`, `css/components.css`
@@ -161,13 +161,13 @@ Comandos:
 **Description:** Menú de anclas, con un botón hamburguesa accesible en móvil (`aria-expanded`, cierre con Esc, foco gestionado). Sin JS, el menú se ve desplegado. Pie con contacto, Instagram, enlaces legales, crédito y la nota "Negocio ficticio de demostración". Plantillas de `legal/aviso-legal.html` y `legal/privacidad.html`.
 
 **Acceptance criteria:**
-- [ ] El menú móvil funciona con teclado (abrir, recorrer y cerrar con Esc devolviendo el foco al botón)
-- [ ] Sin JS, todos los enlaces de navegación son visibles y se pueden usar
-- [ ] Las páginas legales comparten estilos y vuelven a la portada
+- [x] El menú móvil funciona con teclado (abrir, recorrer y cerrar con Esc devolviendo el foco al botón)
+- [x] Sin JS, todos los enlaces de navegación son visibles y se pueden usar
+- [x] Las páginas legales comparten estilos y vuelven a la portada
 
 **Verification:**
-- [ ] `html-validate index.html legal/*.html` sin errores
-- [ ] DevTools: recorrido con teclado a 375 px
+- [x] `html-validate index.html legal/*.html` sin errores
+- [x] DevTools: recorrido con teclado a 375 px
 
 **Dependencies:** T1
 **Files:** `index.html`, `css/components.css`, `js/main.js`, `legal/aviso-legal.html`, `legal/privacidad.html`
@@ -178,21 +178,21 @@ Comandos:
 **Description:** `title`, `meta description`, canonical, Open Graph con imagen, favicon y JSON-LD `HairSalon` con dirección, teléfono, `openingHoursSpecification` (igual que `config.js`) y los servicios con precio.
 
 **Acceptance criteria:**
-- [ ] El JSON-LD es válido y su horario coincide con `js/config.js` y con la tabla del HTML
-- [ ] La `meta description` tiene entre 120 y 160 caracteres
-- [ ] El favicon y la imagen Open Graph están en local
+- [x] El JSON-LD es válido y su horario coincide con `js/config.js` y con la tabla del HTML
+- [x] La `meta description` tiene entre 120 y 160 caracteres
+- [x] El favicon y la imagen Open Graph están en local
 
 **Verification:**
-- [ ] El JSON-LD se analiza sin errores (`JSON.parse` en DevTools y validador de Schema.org)
-- [ ] `html-validate` sin errores
+- [x] El JSON-LD se analiza sin errores (`JSON.parse` en DevTools y validador de Schema.org)
+- [x] `html-validate` sin errores
 
 **Dependencies:** T4 y T5
 **Files:** `index.html`, `assets/img/og.jpg`, `assets/favicon.svg`
 **Scope:** S
 
 ### Checkpoint 3: página completa
-- [ ] Todas las secciones de la spec están presentes, el HTML es válido y los tests pasan
-- [ ] Revisión con Daniel y push
+- [x] Todas las secciones de la spec están presentes, el HTML es válido y los tests pasan
+- [x] Revisión con Daniel y push
 
 ---
 

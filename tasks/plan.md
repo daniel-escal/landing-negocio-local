@@ -57,13 +57,13 @@ T12 Documentación de personalización ← todo
 - [x] Revisión con Daniel y push
 
 ### Fase 3: Resto de contenido y SEO
-- [ ] T7: Galería, Sobre nosotros y Reseñas
-- [ ] T8: Navegación móvil, pie y páginas legales
-- [ ] T9: Metadatos SEO, Open Graph y JSON-LD `HairSalon`
+- [x] T7: Galería, Sobre nosotros y Reseñas
+- [x] T8: Navegación móvil, pie y páginas legales
+- [x] T9: Metadatos SEO, Open Graph y JSON-LD `HairSalon`
 
 ### Checkpoint 3: página completa
-- [ ] Todas las secciones de la spec presentes, HTML válido, tests en verde
-- [ ] Revisión con Daniel y push
+- [x] Todas las secciones de la spec presentes, HTML válido, tests en verde
+- [x] Revisión con Daniel y push
 
 ### Fase 4: Verificación y documentación
 - [ ] T10: Auditoría en navegador (consola, red, responsive, teclado, sin JS)
