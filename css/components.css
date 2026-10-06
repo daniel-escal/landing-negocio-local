@@ -94,3 +94,90 @@
     aspect-ratio: 16 / 9;
   }
 }
+
+/* Carta de servicios: lista con puntos guía hasta el precio, como una carta de barbería */
+.carta__nota {
+  margin-top: calc(-1 * var(--espacio-6));
+  margin-bottom: var(--espacio-8);
+  color: var(--color-texto-suave);
+  font-size: var(--texto-pequeno);
+}
+
+.carta {
+  display: grid;
+  gap: var(--espacio-8) var(--espacio-12);
+  padding: 0;
+  list-style: none;
+}
+
+.carta__item {
+  padding-bottom: var(--espacio-6);
+  border-bottom: var(--borde-fino) solid var(--color-borde);
+}
+
+.carta__linea {
+  display: flex;
+  align-items: baseline; /* respaldo para navegadores sin "last baseline" */
+  align-items: last baseline; /* nombres en 2 líneas: puntos y precio en la última */
+  gap: var(--espacio-2);
+}
+
+.carta__nombre {
+  font-size: var(--texto-h3);
+  text-wrap: pretty; /* "balance" deja huecos que cortan los puntos guía */
+}
+
+.carta__puntos {
+  flex: 1;
+  min-width: var(--espacio-4);
+  border-bottom: 2px dotted var(--color-acento-oscuro);
+  transform: translateY(-0.3em);
+}
+
+.carta__precio {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h3);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.carta__descripcion {
+  margin-top: var(--espacio-2);
+  color: var(--color-texto-suave);
+}
+
+.carta__pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-4);
+  margin-top: var(--espacio-3);
+}
+
+.carta__duracion {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-pequeno);
+}
+
+.carta__pedir {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-inline: var(--espacio-4);
+  border: var(--borde-fino) solid var(--color-acento-oscuro);
+  border-radius: var(--radio);
+  color: var(--color-acento-oscuro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.carta__pedir:hover {
+  background: var(--color-acento-oscuro);
+  color: var(--color-fondo);
+}
+
+@media (min-width: 48rem) {
+  .carta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

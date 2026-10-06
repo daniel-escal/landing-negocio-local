@@ -43,7 +43,7 @@ T12 Documentación de personalización ← todo
 
 ### Checkpoint 1: base
 - [x] `html-validate` limpio, página servida en local, consola limpia y hero correcto a 375, 768 y 1280 px
-- [ ] Revisión con Daniel (estética de la marca) y push si lo aprueba
+- [x] Revisión con Daniel (estética de la marca) y push si lo aprueba
 
 ### Fase 2: Contenido principal
 - [ ] T4: Sección de servicios con precios y duración

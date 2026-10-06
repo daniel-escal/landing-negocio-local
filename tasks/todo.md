@@ -71,7 +71,7 @@ Comandos:
 
 ### Checkpoint 1: base
 - [x] Validación limpia, consola limpia y hero correcto a 375, 768 y 1280 px
-- [ ] Revisión de la estética de marca con Daniel
+- [x] Revisión de la estética de marca con Daniel (aprobada 2026-10-06)
 - [x] Push (si se aprueba)
 
 ---
