@@ -83,13 +83,13 @@ Comandos:
 **Description:** La carta de servicios con 6 a 8 servicios (corte clásico, degradado, arreglo de barba, afeitado a navaja con toalla caliente…), cada uno con nombre, descripción corta, precio y duración. Maquetada como una carta de barbería (líneas de puntos hasta el precio), no como tarjetas idénticas.
 
 **Acceptance criteria:**
-- [ ] La lista es semántica (`ul`/`li` o `dl`) y el precio usa formato español ("15 €")
-- [ ] Se lee bien desde 320 px hasta 1920 px, sin scroll horizontal
-- [ ] Cada servicio tiene un botón "Pedir" que, sin JS, abre el WhatsApp genérico
+- [x] La lista es semántica (`ul`/`li` o `dl`) y el precio usa formato español ("15 €")
+- [x] Se lee bien desde 320 px hasta 1920 px, sin scroll horizontal
+- [x] Cada servicio tiene un botón "Pedir" que, sin JS, abre el WhatsApp genérico
 
 **Verification:**
-- [ ] `html-validate` sin errores
-- [ ] Capturas a 320, 768 y 1280 px
+- [x] `html-validate` sin errores
+- [x] Capturas a 320, 768 y 1280 px
 
 **Dependencies:** T1
 **Files:** `index.html`, `css/components.css`
@@ -100,13 +100,13 @@ Comandos:
 **Description:** Tabla de horario, dirección, enlace "Cómo llegar" a Google Maps e imagen estática del local. Añadir la función pura `estaAbierto(horario, fecha)` en `js/lib/horario.js`, con el horario de `js/config.js`. `main.js` muestra "Abierto ahora · cierra a las 20:00" o "Cerrado · abre el lunes a las 10:00".
 
 **Acceptance criteria:**
-- [ ] Los tests cubren: dentro de horario, cierre de mediodía, domingo cerrado, el minuto exacto de apertura y de cierre, y el cálculo de la próxima apertura
-- [ ] El cálculo usa la hora de `Europe/Madrid`, sea cual sea la zona horaria del visitante
-- [ ] Sin JS, la tabla de horario se ve completa y el indicador no aparece
+- [x] Los tests cubren: dentro de horario, cierre de mediodía, domingo cerrado, el minuto exacto de apertura y de cierre, y el cálculo de la próxima apertura
+- [x] El cálculo usa la hora de `Europe/Madrid`, sea cual sea la zona horaria del visitante
+- [x] Sin JS, la tabla de horario se ve completa y el indicador no aparece
 
 **Verification:**
-- [ ] `node --test` en verde
-- [ ] DevTools: el indicador coincide con la hora real; consola limpia
+- [x] `node --test` en verde
+- [x] DevTools: el indicador coincide con la hora real; consola limpia
 
 **Dependencies:** T1 y T3 (imagen del local)
 **Files:** `index.html`, `css/components.css`, `js/config.js`, `js/lib/horario.js`, `tests/horario.test.js` (+ `js/main.js`)
@@ -117,23 +117,23 @@ Comandos:
 **Description:** `crearEnlaceWhatsApp(telefono, mensaje)` en `js/lib/whatsapp.js`. `main.js` mejora los botones "Pedir" de cada servicio para que el mensaje diga "Hola, quiero cita para: Afeitado a navaja". Si no hay JS, el enlace genérico del HTML sigue funcionando.
 
 **Acceptance criteria:**
-- [ ] Se limpian los caracteres no numéricos del teléfono y el mensaje va codificado (tildes, ñ, €)
-- [ ] Un teléfono no válido lanza un error claro (cubierto por test)
-- [ ] El texto del servicio se lee con `textContent`, nunca con `innerHTML`
+- [x] Se limpian los caracteres no numéricos del teléfono y el mensaje va codificado (tildes, ñ, €)
+- [x] Un teléfono no válido lanza un error claro (cubierto por test)
+- [x] El texto del servicio se lee con `textContent`, nunca con `innerHTML`
 
 **Verification:**
-- [ ] `node --test` en verde
-- [ ] DevTools: pulsar "Pedir" en dos servicios distintos genera dos URL `wa.me` distintas y correctas
+- [x] `node --test` en verde
+- [x] DevTools: pulsar "Pedir" en dos servicios distintos genera dos URL `wa.me` distintas y correctas
 
 **Dependencies:** T4
 **Files:** `js/lib/whatsapp.js`, `tests/whatsapp.test.js`, `js/main.js`, `js/config.js`
 **Scope:** S
 
 ### Checkpoint 2: flujo de cita completo
-- [ ] `node --test` en verde
-- [ ] Recorrido completo: ver un servicio, pedir cita por WhatsApp y consultar horario y ruta
-- [ ] Con JS desactivado todo se ve y los enlaces funcionan
-- [ ] Revisión con Daniel y push
+- [x] `node --test` en verde
+- [x] Recorrido completo: ver un servicio, pedir cita por WhatsApp y consultar horario y ruta
+- [x] Con JS desactivado todo se ve y los enlaces funcionan
+- [x] Push (revisión con Daniel tras el resumen)
 
 ---
 

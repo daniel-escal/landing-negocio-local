@@ -46,15 +46,15 @@ T12 Documentación de personalización ← todo
 - [x] Revisión con Daniel (estética de la marca) y push si lo aprueba
 
 ### Fase 2: Contenido principal
-- [ ] T4: Sección de servicios con precios y duración
-- [ ] T5: Horario y ubicación con indicador "abierto ahora"
-- [ ] T6: WhatsApp con el servicio elegido ya en el mensaje
+- [x] T4: Sección de servicios con precios y duración
+- [x] T5: Horario y ubicación con indicador "abierto ahora"
+- [x] T6: WhatsApp con el servicio elegido ya en el mensaje
 
 ### Checkpoint 2: flujo de cita completo
-- [ ] `node --test` en verde
-- [ ] Recorrido completo en el navegador: ver servicio, pedir cita por WhatsApp y ver horario y ruta
-- [ ] Funciona con JS desactivado
-- [ ] Revisión con Daniel y push
+- [x] `node --test` en verde
+- [x] Recorrido completo en el navegador: ver servicio, pedir cita por WhatsApp y ver horario y ruta
+- [x] Funciona con JS desactivado
+- [x] Revisión con Daniel y push
 
 ### Fase 3: Resto de contenido y SEO
 - [ ] T7: Galería, Sobre nosotros y Reseñas
